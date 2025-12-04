@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Sicupira - Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">JS</span>
+                <span class="name">Jose Sicupira</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="image-wrapper" style="--glitch-img: url('profile.png');">
+                        <img src="profile.png" alt="Jose Sicupira" id="profileImage">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Olá, eu sou</span>
+                        <span class="name-highlight glitch-name" data-text="Jose Sicupira">
+                            <span class="glitch-text glitch-text-1">Jose Sicupira</span>
+                            <span class="glitch-text glitch-text-2">Jose Sicupira</span>
+                            <span class="glitch-text glitch-text-3">Jose Sicupira</span>
+                        </span>
+                    </h1>
+                    <p class="hero-subtitle">Fullstack Developer / Game Dev</p>
+                    <p class="hero-description">
+                        Desenvolvedor formado em Analise e Desen de Sistemas (IFPB Campus Cajazeiras)
+                        Proficiente em Node.js, Java, React, Godot, entre outras tecnologias.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/JoseNeto5689" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Olá! Sou um programador formado em ADS com habilidades em desenvolvimento web moderno. 
+                        Possuo proficiência em Node.js, Java, React, Express e Godot 4, entre outras linguagens, trago uma riqueza de 
+                        conhecimento e experiência prática para a mesa.
+                    </p>
+                    <p>
+                        Seja construindo aplicações server-side escaláveis com Node.js e Express ou criando interfaces de 
+                        usuário responsivas com React, estou sempre pronto para enfrentar novos desafios e criar soluções 
+                        inovadoras.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">41</span>
+                            <span class="stat-label">Repositórios</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">25</span>
+                            <span class="stat-label">Seguidores</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30</span>
+                            <span class="stat-label">Seguindo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades & Tecnologias</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                    <p>Desenvolvimento backend escalável</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <p>Interfaces de usuário modernas</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                    <p>Desenvolvimento orientado a objetos</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Express</h3>
+                    <p>Framework web para Node.js</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Linguagem de programação versátil</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Estruturação web moderna</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Estilização e design responsivo</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React Native</h3>
+                    <p>Desenvolvimento mobile</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>JoseNeto5689</h3>
+                        <p>Config files para meu perfil do GitHub</p>
+                        <div class="project-tech">
+                            <span>GitHub</span>
+                        </div>
+                        <a href="https://github.com/JoseNeto5689" target="_blank" class="project-link">
+                            Ver no GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Projeto-JGame</h3>
+                        <p>Projeto de jogo desenvolvido em Java</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                        </div>
+                        <a href="https://github.com/JoseNeto5689/Projeto-JGame" target="_blank" class="project-link">
+                            Ver no GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>ReactQuiz</h3>
+                        <p>Projeto de quiz desenvolvido em React Native (Expo)</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Expo</span>
+                        </div>
+                        <a href="https://github.com/JoseNeto5689/ReactQuiz" target="_blank" class="project-link">
+                            Ver no GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>MyApp-Teste</h3>
+                        <p>Meu primeiro teste com React Native</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/JoseNeto5689/MyApp-Teste" target="_blank" class="project-link">
+                            Ver no GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Prototipo-Restaurante-IFPB</h3>
+                        <p>Protótipo referente ao sistema de estoque do restaurante de São Gonçalo IFPB</p>
+                        <div class="project-tech">
+                            <span>Visual Basic 6.0</span>
+                        </div>
+                        <a href="https://github.com/JoseNeto5689/Prototipo-Restaurante-IFPB" target="_blank" class="project-link">
+                            Ver no GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>alura-gatito-static</h3>
+                        <p>Projeto estático do Alura</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/JoseNeto5689/alura-gatito-static" target="_blank" class="project-link">
+                            Ver no GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+                <div class="contact-info">
+                    <h3>Vamos conversar!</h3>
+                    <p>Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades de colaboração.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>jose.sicupiraneto@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/JoseNeto5689" target="_blank">github.com/JoseNeto5689</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jose Sicupira. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="https://github.com/JoseNeto5689" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
